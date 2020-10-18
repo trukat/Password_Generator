@@ -1,7 +1,7 @@
 // Assignment Code - possibly camelCase var names
 var generateBtn = document.querySelector("#generate");
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 var sChars = ["!", "@", "$", "%", "&"];
 
@@ -10,6 +10,15 @@ console.log(typeof length, length)
 
 if (length < 8 || length > 128) {
   alert("Password must be between 8-128 characters. Start over.")
+} else {
+
+  lowercase = confirm("Should your password contain lowercase letters?");
+  uppercase = confirm("Should your password contain uppercase letters?");
+  num = confirm("should your password contain numbers?");
+  sChars = confirm("Should your password contain special characters?");
+
+
+
 }
 
 // Write password to the #password input
