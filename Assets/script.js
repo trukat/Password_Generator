@@ -34,7 +34,7 @@ while (pw.length < length) {
     pw += characters[i][rand]
   }
 }
-console.log(pw)
+
 
 // // Write password to the #password input
 // function writePassword() {
